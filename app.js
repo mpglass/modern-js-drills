@@ -21,3 +21,20 @@ function getStats(a,b) {
 let stats = getStats(2, 6);
 console.log(stats.exponent);
 console.log(stats.product);
+
+
+function tellAll (name, location, favFood) {
+    return `${name}, ${location}, ${favFood}`;
+};
+let me = ['Michelle', 'Montgomery', 'Tofu'];
+console.log(tellAll(...me));
+
+let aName = 'Michelle';
+let getLetters = (aName) => {
+    let chars = [...aName];
+    for (i = 0; i < chars.length; i++){
+        console.log(chars[i]);    
+    }
+};
+getLetters(aName);
+
